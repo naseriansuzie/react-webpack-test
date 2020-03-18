@@ -1,8 +1,8 @@
-const React = require("react");
-const ReactDom = require("react-dom");
-const { hot } = require("react-hot-loader/root");
+import React from "react";
+import { render } from "react-dom";
+import { hot } from "react-hot-loader/root";
+import Hello from "./Hello";
 
-const Hello = require("./Hello");
 const Hot = hot(Hello);
 
-ReactDom.render(<Hot />, document.querySelector("#root"));
+render(<Hot />, document.querySelector("#root"));
